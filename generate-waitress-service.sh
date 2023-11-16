@@ -10,8 +10,8 @@ After=network.target
 Type=simple
 User=root
 Group=root
-WorkingDirectory=/home/$USER/assignment
-ExecStart=/home/$USER/assignment/env/bin/waitress-serve --listen=127.0.0.1:5000 assignment:app
+WorkingDirectory=/home/$USER/starlord/starlord
+ExecStart=/home/$USER/starlord/starlord/env/bin/waitress-serve --listen=127.0.0.1:5000 starlord:app
 Restart=always
 
 [Install]
